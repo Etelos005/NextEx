@@ -16,43 +16,45 @@ export default function Navbar() {
     }`
 
   return (
-    <nav className="w-full grid grid-cols-1 md:grid-cols-[58%_42%] min-h-[72px]">
-      <div className="hidden md:flex items-center bg-white">
-        <div className="w-full">
-          <div className="max-w-[1320px] mx-auto w-full flex justify-between items-center px-6 py-4">
-            <div className="flex items-center space-x-10">
-              <h1 className="text-2xl font-bold cursor-pointer">
-                Job<span className="text-[#00D5AE]">Now</span>
-              </h1>
-              <ul className="flex space-x-6 text-sm">
-                <li><Link href="/" className={linkClass('/')}>Home</Link></li>
-                <li><Link href="/job" className={linkClass('/job')}>Job</Link></li>
-                <li><Link href="/about" className={linkClass('/about')}>About Us</Link></li>
-                <li><Link href="/contact" className={linkClass('/contact')}>Contact</Link></li>
-              </ul>
+    <nav className="w-full min-h-[72px] relative bg-white z-50">
+      <div className="absolute top-0 right-0 bottom-0 w-[42%] bg-[#00D5AE] hidden md:block z-0 " />
+
+      <div className="w-full relative z-10">
+        <div className="max-w-[1320px] mx-auto w-full grid grid-cols-1 md:grid-cols-3">
+          <div className="hidden md:flex items-center col-span-2">
+            <div className="w-full flex justify-between items-center px-6 py-4">
+              <div className="flex items-center space-x-10">
+                <h1 className="text-2xl font-bold cursor-pointer">
+                  Job<span className="text-[#00D5AE]">Now</span>
+                </h1>
+                <ul className="flex space-x-6 text-sm">
+                  <li><Link href="/" className={linkClass('/')}>Home</Link></li>
+                  <li><Link href="/job" className={linkClass('/job')}>Job</Link></li>
+                  <li><Link href="/about" className={linkClass('/about')}>About Us</Link></li>
+                  <li><Link href="/contact" className={linkClass('/contact')}>Contact</Link></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden md:flex justify-end items-center px-6">
+            <div className="w-full flex justify-end items-center gap-4">
+              <Link href="/signin" className="text-white text-sm hover:underline">
+                Sign In
+              </Link>
+              <Link
+                href="/signup"
+                className="flex items-center gap-2 bg-white text-black border border-white rounded-md px-4 py-1 hover:bg-gray-100 transition text-sm"
+              >
+                <FiLogIn className="text-sm" />
+                Create Account
+              </Link>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="hidden md:flex justify-end items-center bg-[#00D5AE] px-6">
-        <div className="w-full">
-          <div className="max-w-[1320px] mx-auto w-full flex justify-end items-center gap-4">
-            <Link href="/signin" className="text-white text-sm hover:underline">
-              Sign In
-            </Link>
-            <Link
-              href="/signup"
-              className="flex items-center gap-2 bg-white text-black border border-white rounded-md px-4 py-1 hover:bg-gray-100 transition text-sm"
-            >
-              <FiLogIn className="text-sm" />
-              Create Account
-            </Link>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex md:hidden justify-center items-center relative px-6 py-4 bg-white w-full">
+      <div className="flex md:hidden justify-center items-center fixed top-0 left-0 right-0 px-6 py-4 bg-white z-50 shadow">
         <h1 className="text-2xl font-bold text-center w-full">
           Job<span className="text-[#00D5AE]">Now</span>
         </h1>
@@ -83,17 +85,17 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden bg-[#00D5AE] w-full px-6 py-6 space-y-4 text-white text-left">
-          <Link href="/" className="block" onClick={() => setMenuOpen(false)}>Home</Link>
-          <Link href="/job" className="block" onClick={() => setMenuOpen(false)}>Job</Link>
-          <Link href="/about" className="block" onClick={() => setMenuOpen(false)}>About Us</Link>
-          <Link href="/contact" className="block" onClick={() => setMenuOpen(false)}>Contact</Link>
+        <div className="md:hidden fixed top-[72px] left-4 right-4 z-[9999] bg-[#00D5AE] rounded-xl shadow-xl px-6 py-6 space-y-4 text-white text-left">
+          <Link href="/" onClick={() => setMenuOpen(false)} className="block">Home</Link>
+          <Link href="/job" onClick={() => setMenuOpen(false)} className="block">Job</Link>
+          <Link href="/about" onClick={() => setMenuOpen(false)} className="block">About Us</Link>
+          <Link href="/contact" onClick={() => setMenuOpen(false)} className="block">Contact</Link>
           <hr className="border-white/30" />
-          <Link href="/signin" className="block" onClick={() => setMenuOpen(false)}>Sign In</Link>
+          <Link href="/signin" onClick={() => setMenuOpen(false)} className="block">Sign In</Link>
           <Link
             href="/signup"
-            className="inline-flex items-center gap-2 bg-white text-black border border-white rounded-md px-4 py-1 hover:bg-gray-100 transition text-sm"
             onClick={() => setMenuOpen(false)}
+            className="inline-flex items-center gap-2 bg-white text-black border border-white rounded-md px-4 py-2 hover:bg-gray-100 transition text-sm"
           >
             <FiLogIn className="text-sm" />
             Create Account
