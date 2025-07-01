@@ -10,7 +10,7 @@ export default function Banner() {
 
       <div className="relative max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 z-10">
         <div className="bg-white flex items-start justify-center z-10">
-          <div className="w-full px-4 pt-38 md:pt-40 pb-10 text-center md:text-left">
+          <div className="w-full px-4 pt-24 md:pt-25 pb-10 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Search, Find, & Apply
             </h1>
@@ -52,13 +52,13 @@ export default function Banner() {
         </div>
 
         <div className="relative w-full min-h-[400px] md:min-h-full overflow-hidden pt-0 z-10">
-          <div className="absolute top-[15%] left-[15%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
+          <div className="absolute top-[10%] left-[15%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
             <FaSearch className="text-[#00D5AE] text-2xl" />
           </div>
-          <div className="absolute bottom-[25%] left-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
+          <div className="absolute bottom-[10%] left-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
             <BsShieldShaded className="text-[#00D5AE] text-2xl" />
           </div>
-          <div className="absolute bottom-[60%] right-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[10deg]">
+          <div className="absolute bottom-[45%] right-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[10deg]">
             <FaChartBar className="text-[#00D5AE] text-2xl" />
           </div>
         </div>
