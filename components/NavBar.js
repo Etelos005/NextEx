@@ -16,40 +16,38 @@ export default function Navbar() {
     }`
 
   return (
-    <nav className="w-full min-h-[72px] relative bg-white z-50">
-      <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-[#00D5AE] hidden md:block z-0" />
-      <div className="w-full relative z-10">
-        <div className="container mx-auto grid grid-cols-1 md:grid-cols-3">
-          <div className="hidden md:flex items-center col-span-2">
-            <div className="flex items-center space-x-10 py-4">
-              <h1 className="text-2xl font-bold cursor-pointer">
-                Job<span className="text-[#00D5AE]">Now</span>
-              </h1>
-              <ul className="flex space-x-6 text-sm">
-                <li><Link href="/" className={linkClass('/')}>Home</Link></li>
-                <li><Link href="/job" className={linkClass('/job')}>Job</Link></li>
-                <li><Link href="/about" className={linkClass('/about')}>About Us</Link></li>
-                <li><Link href="/contact" className={linkClass('/contact')}>Contact</Link></li>
-              </ul>
-            </div>
-          </div>
+    <nav className="w-full z-50">
+      <div className="hidden md:block w-full h-[72px] bg-[linear-gradient(to_right,white_60%,#00D5AE_40%)]" />
 
-          <div className="hidden md:flex justify-end items-center gap-4 py-4">
-            <Link href="/signin" className="text-white text-sm hover:underline">
-              Sign In
-            </Link>
-            <Link
-              href="/signup"
-              className="flex items-center gap-2 bg-white text-black border border-white rounded-md px-4 py-1 hover:bg-gray-100 transition text-sm"
-            >
-              <FiLogIn className="text-sm" />
-              Create Account
-            </Link>
-          </div>
+      <div className="md:hidden w-full h-[72px] bg-white" />
+
+      <div className="container mx-auto px-1 h-[72px] -mt-[72px] relative z-10 flex justify-between items-center">
+        <div className="flex items-center space-x-10">
+          <h1 className="text-2xl font-bold cursor-pointer">
+            Job<span className="text-[#00D5AE]">Now</span>
+          </h1>
+          <ul className="hidden md:flex space-x-6 text-sm">
+            <li><Link href="/" className={linkClass('/')}>Home</Link></li>
+            <li><Link href="/job" className={linkClass('/job')}>Job</Link></li>
+            <li><Link href="/about" className={linkClass('/about')}>About Us</Link></li>
+            <li><Link href="/contact" className={linkClass('/contact')}>Contact</Link></li>
+          </ul>
+        </div>
+        <div className="hidden md:flex items-center gap-4">
+          <Link href="/signin" className="text-white text-sm hover:underline">
+            Sign In
+          </Link>
+          <Link
+            href="/signup"
+            className="flex items-center gap-2 bg-white text-black border border-white rounded-md px-4 py-1 hover:bg-gray-100 transition text-sm"
+          >
+            <FiLogIn className="text-sm" />
+            Create Account
+          </Link>
         </div>
       </div>
 
-      <div className="flex md:hidden justify-center items-center fixed top-0 left-0 right-0 px-6 py-4 bg-white z-50 shadow">
+      <div className="md:hidden flex justify-center items-center fixed top-0 left-0 right-0 px-6 py-4 bg-white z-50 shadow">
         <h1 className="text-2xl font-bold text-center w-full">
           Job<span className="text-[#00D5AE]">Now</span>
         </h1>
@@ -59,9 +57,15 @@ export default function Navbar() {
         >
           <div className="w-10 h-10 rounded bg-[#00D5AE] flex items-center justify-center transition-all duration-300">
             <div className="relative w-5 h-5 flex flex-col justify-between items-center">
-              <span className={`block h-[2px] w-full bg-white transform transition duration-300 ease-in-out ${menuOpen ? 'rotate-45 translate-y-[6px]' : ''}`} />
-              <span className={`block h-[2px] w-full bg-white transition-all duration-300 ease-in-out ${menuOpen ? 'opacity-0' : ''}`} />
-              <span className={`block h-[2px] w-full bg-white transform transition duration-300 ease-in-out ${menuOpen ? '-rotate-45 -translate-y-[6px]' : ''}`} />
+              <span className={`block h-[2px] w-full bg-white transform transition duration-300 ease-in-out ${
+                menuOpen ? 'rotate-45 translate-y-[6px]' : ''
+              }`} />
+              <span className={`block h-[2px] w-full bg-white transition-all duration-300 ease-in-out ${
+                menuOpen ? 'opacity-0' : ''
+              }`} />
+              <span className={`block h-[2px] w-full bg-white transform transition duration-300 ease-in-out ${
+                menuOpen ? '-rotate-45 -translate-y-[6px]' : ''
+              }`} />
             </div>
           </div>
         </button>

@@ -3,15 +3,18 @@ import { BsShieldShaded } from 'react-icons/bs'
 
 export default function Banner() {
   return (
-    <section className="relative w-full bg-white overflow-hidden">
-      {/* Green background half */}
-      <div className="hidden md:block absolute right-0 top-0 h-full w-1/2 bg-[#00D5AE] rounded-bl-[100px] z-0" />
+    <section className="relative w-full overflow-hidden">
+      <div className="hidden md:flex w-full h-[350px]">
+        <div className="w-[60%] bg-white" />
+        <div className="w-[40%]">
+          <div className="w-full h-full bg-[#00D5AE] rounded-bl-[100px]" />
+        </div>
+      </div>
+
       <div className="block md:hidden absolute inset-0 bg-[#00D5AE] z-0" />
 
-      {/* CONTENT CENTERED */}
-      <div className="relative container mx-auto z-10">
+      <div className="relative container mx-auto z-10 md:-mt-[350px]">
         <div className="grid grid-cols-1 md:grid-cols-2">
-          {/* LEFT TEXT */}
           <div className="bg-white flex items-start justify-center">
             <div className="w-full px-4 pt-24 md:pt-24 pb-10 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-4">
@@ -54,12 +57,11 @@ export default function Banner() {
             </div>
           </div>
 
-          {/* ICONS */}
-          <div className="relative w-full min-h-[400px] md:min-h-full overflow-hidden pt-0">
-            <div className="absolute top-[10%] left-[15%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
+          <div className="relative w-full h-[350px] overflow-hidden">
+            <div className="absolute top-[10%] left-[15%] md:left-[30%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
               <FaSearch className="text-[#00D5AE] text-2xl" />
             </div>
-            <div className="absolute bottom-[10%] left-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
+            <div className="absolute bottom-[10%] left-[10%] md:left-[28%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
               <BsShieldShaded className="text-[#00D5AE] text-2xl" />
             </div>
             <div className="absolute bottom-[40%] right-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[10deg]">
