@@ -13,7 +13,7 @@ export default function HowItWorks() {
           </div>
 
           <div className="hidden md:block">
-            <button className="border border-[#00D5AE] text-[#00D5AE] hover:bg-[#00D5AE] hover:text-white transition px-5 py-2 rounded-md text-sm font-medium md:mr-[50px] cursor-pointer">
+            <button className="border border-[#00D5AE] text-[#00D5AE] hover:bg-[#00D5AE] hover:text-white transition px-5 py-2 rounded-md text-sm font-medium md:mr-[12px] cursor-pointer">
               Learn More
             </button>
           </div>
