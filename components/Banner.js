@@ -4,13 +4,13 @@ import { BsShieldShaded } from 'react-icons/bs'
 export default function Banner() {
   return (
     <section className="relative w-full bg-white">
-      <div className="absolute right-0 top-0 bottom-0 w-1/2 bg-[#00D5AE] rounded-bl-[100px] hidden md:block z-0" />
+      <div className="absolute right-0 top-0 h-full w-1/2 bg-[#00D5AE] rounded-bl-[100px] hidden md:block z-0" />
 
-      <div className="relative max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 min-h-screen z-10">
-        <div className="block md:hidden absolute inset-0 bg-[#00D5AE] z-0" />
+      <div className="block md:hidden absolute inset-0 bg-[#00D5AE] z-0" />
 
-        <div className="bg-white flex items-center justify-center z-10">
-          <div className="w-full px-4 pt-0 pb-10 text-center md:text-left">
+      <div className="relative max-w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 z-10">
+        <div className="bg-white flex items-start justify-center z-10">
+          <div className="w-full px-4 pt-38 md:pt-40 pb-10 text-center md:text-left">
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Search, Find, & Apply
             </h1>
