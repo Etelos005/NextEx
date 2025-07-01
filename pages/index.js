@@ -2,6 +2,7 @@ import Head from 'next/head'
 import NavBar from '@/components/NavBar'
 import Banner from '@/components/Banner'
 import HowItWorks from '@/components/HowItWorks'
+import DreamCompany from '@/components/DreamCompany'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         <NavBar />
         <Banner />
         <HowItWorks />
+        <DreamCompany />
       </div>
     </>
   )

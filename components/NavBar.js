@@ -16,8 +16,8 @@ export default function Navbar() {
     }`
 
   return (
-    <nav className="w-full min-h-[72px] relative bg-white z-50">
-      <div className="absolute top-0 right-0 bottom-0 w-[42%] bg-[#00D5AE] hidden md:block z-0 " />
+    <nav className="w-full relative bg-white z-50">
+      <div className="absolute top-0 right-0 bottom-0 w-1/2 bg-[#00D5AE] hidden md:block z-0" />
 
       <div className="w-full relative z-10">
         <div className="max-w-[1320px] mx-auto w-full grid grid-cols-1 md:grid-cols-3">
