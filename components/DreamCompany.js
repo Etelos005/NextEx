@@ -1,7 +1,7 @@
 export default function DreamCompany() {
   return (
-    <section className="py-20 px-6 bg-white">
-      <div className="container mx-auto px-10 grid grid-cols-1 md:grid-cols-12 items-center gap-8">
+    <section className="py-20 px-2 sm:px-6 bg-white">
+      <div className="container mx-auto px-2 sm:px-6 grid grid-cols-1 md:grid-cols-12 items-center gap-8">
         
         <div className="md:col-span-6 flex justify-center md:justify-start">
           <img

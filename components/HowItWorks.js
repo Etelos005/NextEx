@@ -2,8 +2,8 @@ import { HiUserAdd, HiDocumentText, HiSearch, HiUpload } from 'react-icons/hi'
 
 export default function HowItWorks() {
   return (
-    <section className=" py-20 px-6 bg-gray-50">
-      <div className="container mx-auto px-10">
+    <section className="py-20 px-3 sm:px-4 bg-gray-50">
+      <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-5 gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-black mt-5 mb-10">How it Works</h2>
@@ -13,34 +13,34 @@ export default function HowItWorks() {
           </div>
 
           <div className="hidden md:block">
-            <button className="border border-[#00D5AE] text-[#00D5AE] hover:bg-[#00D5AE] hover:text-white transition px-5 py-2 rounded-md text-sm font-medium md:mr-[0px] cursor-pointer">
+            <button className="border border-[#00D5AE] text-[#00D5AE] hover:bg-[#00D5AE] hover:text-white transition px-5 py-2 rounded-md text-sm font-medium cursor-pointer">
               Learn More
             </button>
           </div>
         </div>
 
-        <div className="grid gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mb-12">
+        <div className="grid gap-4 sm:gap-6 grid-cols-2 md:grid-cols-2 lg:grid-cols-4 mb-12">
           {[
             {
               icon: <HiUserAdd className="text-[#00D5AE] text-4xl mb-4" />,
               title: 'Register',
-              desc: 'Create your account to get started and track your job applications easily.'
+              desc: 'Create your account to get started and track your job applications easily.',
             },
             {
               icon: <HiDocumentText className="text-[#00D5AE] text-4xl mb-4" />,
               title: 'Create a Resume',
-              desc: 'Use our tools to build a professional resume that gets noticed.'
+              desc: 'Use our tools to build a professional resume that gets noticed.',
             },
             {
               icon: <HiSearch className="text-[#00D5AE] text-4xl mb-4" />,
               title: 'Find Job',
-              desc: 'Search and filter thousands of job opportunities tailored for you.'
+              desc: 'Search and filter thousands of job opportunities tailored for you.',
             },
             {
               icon: <HiUpload className="text-[#00D5AE] text-4xl mb-4" />,
               title: 'Apply Job',
-              desc: 'Submit your resume directly and monitor your application status.'
-            }
+              desc: 'Submit your resume directly and monitor your application status.',
+            },
           ].map((card, index) => (
             <div
               key={index}

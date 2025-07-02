@@ -53,7 +53,7 @@ export default function Navbar() {
         </h1>
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="absolute right-6 z-50 focus:outline-none"
+          className="ml-auto z-50 focus:outline-none"
         >
           <div className="w-10 h-10 rounded bg-[#00D5AE] flex items-center justify-center transition-all duration-300">
             <div className="relative w-5 h-5 flex flex-col justify-between items-center">

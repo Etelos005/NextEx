@@ -15,18 +15,19 @@ export default function Banner() {
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[450px]">
           
           <div className="bg-white flex items-start justify-center">
-            <div className="w-full px-4 pt-24 pb-10 text-center md:text-left">
+            <div className="w-full px-4 pt-12 md:pt-24 pb-10 text-center md:text-left">
               <h1 className="text-4xl md:text-5xl font-bold mb-8">
-                Search, Find, & Apply
+                Search, Find, &amp; Apply
               </h1>
               <p className="text-gray-600 mb-6 max-w-md mx-auto md:mx-0">
-                Find whatever job you need: Engineer, Doctor, Lawyer, Taxi Driver, you choose!
+                Find whatever job you need: Engineer, Doctor, Lawyer, Taxi Driver—you choose!
                 And of course, we should know where you live because we don't want
                 you to work far from home after all.
               </p>
 
-              <div className="flex flex-col md:flex-row gap-2 items-center bg-white rounded-xl p-2 shadow w-full max-w-[500px] md:mx-0 mx-auto">
-                <div className="flex items-center gap-2 bg-gray-100 p-2 rounded-md w-full md:w-auto">
+              <div className="flex flex-row flex-wrap gap-2 items-center bg-white rounded-xl p-2 shadow w-full max-w-[500px] md:mx-0 mx-auto">
+                
+                <div className="flex items-center gap-2 bg-gray-100 p-2 rounded-md flex-1 md:w-auto min-w-[120px]">
                   <FaSearch className="text-gray-500" />
                   <input
                     type="text"
@@ -35,9 +36,9 @@ export default function Banner() {
                   />
                 </div>
 
-                <div className="flex items-center gap-2 bg-gray-100 p-2 rounded-md w-full md:w-auto cursor-pointer">
+                <div className="flex items-center gap-2 bg-gray-100 p-2 rounded-md flex-1 md:w-auto min-w-[120px]">
                   <FaSearchLocation className="text-gray-500" />
-                  <select className="bg-transparent text-sm text-gray-600 outline-none w-full">
+                  <select className="bg-transparent text-sm text-gray-600 outline-none w-full cursor-pointer">
                     <option value="">Select Location</option>
                     <option value="Beirut">Beirut</option>
                     <option value="Tripoli">Tripoli</option>
@@ -48,7 +49,7 @@ export default function Banner() {
 
                 <button
                   type="button"
-                  className="bg-[#00D5AE] hover:bg-[#00bfa0] text-white px-6 py-2 rounded-md text-sm transition cursor-pointer"
+                  className="bg-[#00D5AE] hover:bg-[#00bfa0] text-white px-6 py-2 rounded-md text-sm transition cursor-pointer flex-none"
                 >
                   Search
                 </button>
