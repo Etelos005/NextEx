@@ -7,7 +7,7 @@ export default function HowItWorks() {
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-5 gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-black mt-5 mb-10">How it Works</h2>
-            <p className="text-gray-600 max-w-md mb-12">
+            <p className="text-gray-600 max-w-md mb-5 md:mb-12">
               Now if you're wondering how this website works, here are some things you can do to start up.
             </p>
           </div>
