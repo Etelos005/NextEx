@@ -3,6 +3,7 @@ import NavBar from '@/components/NavBar'
 import Banner from '@/components/Banner'
 import HowItWorks from '@/components/HowItWorks'
 import DreamCompany from '@/components/DreamCompany'
+import Categories from '@/components/Categories'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Banner />
         <HowItWorks />
         <DreamCompany />
+        <Categories />
       </div>
     </>
   )
