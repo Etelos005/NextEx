@@ -1,15 +1,22 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import { FaBrain, FaChartLine, FaUniversity, FaProjectDiagram, FaTools, FaFlask } from 'react-icons/fa'
+import {
+  FaBrain,
+  FaChartLine,
+  FaUniversity,
+  FaProjectDiagram,
+  FaTools,
+  FaFlask,
+} from 'react-icons/fa'
 
 const categories = [
-  { icon: <FaBrain />, title: 'Design and Development', jobs: '380' },
-  { icon: <FaChartLine />, title: 'Accounting and Finance', jobs: '350' },
-  { icon: <FaUniversity />, title: 'Banks Institution', jobs: '350' },
-  { icon: <FaProjectDiagram />, title: 'Product Management', jobs: '350' },
-  { icon: <FaTools />, title: 'Engineering and Software', jobs: '300' },
-  { icon: <FaFlask />, title: 'Research and Science', jobs: '290' }
+  { icon: <FaBrain />, title: ['Design and', 'Development'], jobs: '380' },
+  { icon: <FaChartLine />, title: ['Accounting and', 'Finance'], jobs: '350' },
+  { icon: <FaUniversity />, title: ['Banks', 'Institution'], jobs: '350' },
+  { icon: <FaProjectDiagram />, title: ['Product', 'Management'], jobs: '350' },
+  { icon: <FaTools />, title: ['Engineering and', 'Software'], jobs: '300' },
+  { icon: <FaFlask />, title: ['Research and', 'Science'], jobs: '290' },
 ]
 
 export default function Categories() {
@@ -27,18 +34,25 @@ export default function Categories() {
           breakpoints={{
             480: { slidesPerView: 2 },
             640: { slidesPerView: 3 },
-            1024: { slidesPerView: 4 }
+            1024: { slidesPerView: 4.3 },
           }}
         >
           {categories.map((cat, index) => (
             <SwiperSlide key={index}>
-              <div className="group h-[190px] md:h-[170px] p-6 bg-white rounded-xl shadow-sm text-left transition duration-300 hover:bg-[#00D5AE] hover:text-white cursor-pointer flex flex-col justify-between">
+              <div className="group p-6 bg-white rounded-2xl shadow-sm text-left transition duration-300 hover:bg-[#00D5AE] hover:text-white cursor-pointer flex flex-col justify-between h-full min-h-[180px]">
                 <div className="text-5xl text-[#00D5AE] group-hover:text-white mb-6">
                   {cat.icon}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold mb-2 leading-snug">{cat.title}</h3>
-                  <p className="text-xs text-gray-500 group-hover:text-white">{cat.jobs} Job Vacancy</p>
+                  <h3 className="text-lg font-semibold mb-2 leading-snug">
+                    {cat.title.map((line, i) => (
+                      <span key={i}>
+                        {line}
+                        {i < cat.title.length - 1 && <br />}
+                      </span>
+                    ))}
+                  </h3>
+                  <p className="text-xs text-gray-500 group-hover:text-white mt-4">{cat.jobs} Job Vacancy</p>
                 </div>
               </div>
             </SwiperSlide>
