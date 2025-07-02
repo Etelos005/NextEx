@@ -4,20 +4,19 @@ import { BsShieldShaded } from 'react-icons/bs'
 export default function Banner() {
   return (
     <section className="relative w-full overflow-hidden">
-      <div className="hidden md:flex w-full h-[350px]">
-        <div className="w-[60%] bg-white" />
-        <div className="w-[40%]">
-          <div className="w-full h-full bg-[#00D5AE] rounded-bl-[100px]" />
-        </div>
+      <div className="hidden md:flex w-full min-h-[450px]">
+        <div className="w-[50%] bg-white" />
+        <div className="w-[50%] bg-[#00D5AE] rounded-bl-[100px]" />
       </div>
 
       <div className="block md:hidden absolute inset-0 bg-[#00D5AE] z-0" />
 
-      <div className="relative container mx-auto z-10 md:-mt-[350px]">
-        <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="relative container mx-auto md:px-10 z-10 md:-mt-[450px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[450px]">
+          
           <div className="bg-white flex items-start justify-center">
-            <div className="w-full px-4 pt-24 md:pt-24 pb-10 text-center md:text-left">
-              <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            <div className="w-full px-4 pt-24 pb-10 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-bold mb-8">
                 Search, Find, & Apply
               </h1>
               <p className="text-gray-600 mb-6 max-w-md mx-auto md:mx-0">
@@ -57,14 +56,14 @@ export default function Banner() {
             </div>
           </div>
 
-          <div className="relative w-full h-[350px] overflow-hidden">
-            <div className="absolute top-[10%] left-[15%] md:left-[30%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
+          <div className="relative w-full min-h-[450px] overflow-hidden">
+            <div className="absolute top-[10%] left-[15%] md:left-[15%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
               <FaSearch className="text-[#00D5AE] text-2xl" />
             </div>
-            <div className="absolute bottom-[10%] left-[10%] md:left-[28%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
+            <div className="absolute bottom-[10%] left-[10%] md:left-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[-10deg]">
               <BsShieldShaded className="text-[#00D5AE] text-2xl" />
             </div>
-            <div className="absolute bottom-[40%] right-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[10deg]">
+            <div className="absolute bottom-[45%] right-[10%] w-14 h-14 bg-white rounded-lg flex items-center justify-center shadow rotate-[10deg]">
               <FaChartBar className="text-[#00D5AE] text-2xl" />
             </div>
           </div>

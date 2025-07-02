@@ -3,7 +3,7 @@ import { HiUserAdd, HiDocumentText, HiSearch, HiUpload } from 'react-icons/hi'
 export default function HowItWorks() {
   return (
     <section className=" py-20 px-6 bg-gray-50">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-10">
         <div className="flex flex-col md:flex-row items-start md:items-center justify-between mb-5 gap-4">
           <div>
             <h2 className="text-3xl md:text-4xl font-bold text-black mt-5 mb-10">How it Works</h2>

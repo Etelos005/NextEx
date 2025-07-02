@@ -1,9 +1,8 @@
 export default function DreamCompany() {
   return (
     <section className="py-20 px-6 bg-white">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-12 items-center gap-8">
+      <div className="container mx-auto px-10 grid grid-cols-1 md:grid-cols-12 items-center gap-8">
         
-        {/* Image */}
         <div className="md:col-span-6 flex justify-center md:justify-start">
           <img
             src="/Images/thumbsup.png"
@@ -12,9 +11,8 @@ export default function DreamCompany() {
           />
         </div>
 
-        {/* Text: center on mobile, shifted left on desktop */}
         <div className="md:col-span-6 flex flex-col gap-4 text-center md:text-left items-center md:items-start md:-ml-[120px]">
-          <h2 className="text-2xl md:text-3xl font-bold text-black">
+          <h2 className="text-2xl md:text-5xl font-bold text-black">
             We will help you to become an employee in your dream company
           </h2>
           <p className="text-gray-600">

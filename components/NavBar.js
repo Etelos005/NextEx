@@ -17,11 +17,11 @@ export default function Navbar() {
 
   return (
     <nav className="w-full z-50">
-      <div className="hidden md:block w-full h-[72px] bg-[linear-gradient(to_right,white_60%,#00D5AE_40%)]" />
+      <div className="hidden md:block w-full h-[72px] bg-[linear-gradient(to_right,white_50.01%,#00D5AE_50%)]" />
 
       <div className="md:hidden w-full h-[72px] bg-white" />
 
-      <div className="container mx-auto px-1 h-[72px] -mt-[72px] relative z-10 flex justify-between items-center">
+      <div className="container mx-auto px-10 h-[72px] -mt-[72px] relative z-10 flex justify-between items-center">
         <div className="flex items-center space-x-10">
           <h1 className="text-2xl font-bold cursor-pointer">
             Job<span className="text-[#00D5AE]">Now</span>
