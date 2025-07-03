@@ -1,19 +1,12 @@
 'use client'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
-import {
-  FaBrain,
-  FaChartLine,
-  FaUniversity,
-  FaProjectDiagram,
-  FaTools,
-  FaFlask,
-} from 'react-icons/fa'
+import {FaBrain, FaChartLine, FaUniversity, FaProjectDiagram, FaTools, FaFlask,} from 'react-icons/fa'
 
 const categories = [
   { icon: <FaBrain />, title: ['Design and', 'Development'], jobs: '380' },
   { icon: <FaChartLine />, title: ['Accounting and', 'Finance'], jobs: '350' },
-  { icon: <FaUniversity />, title: ['Banks', 'Institution'], jobs: '350' },
+  { icon: <FaUniversity />, title: ['Bank', 'Institution'], jobs: '350' },
   { icon: <FaProjectDiagram />, title: ['Product', 'Management'], jobs: '350' },
   { icon: <FaTools />, title: ['Engineering and', 'Software'], jobs: '300' },
   { icon: <FaFlask />, title: ['Research and', 'Science'], jobs: '290' },
