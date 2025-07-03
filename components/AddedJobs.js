@@ -40,7 +40,7 @@ const jobs = [
     logo: '/Images/cyber.png',
     title: 'Cybersecurity Specialist',
     company: 'SecureNet',
-    description: 'Protect company data and ensure systems are secure from cyber threats. Monitor security systems and respond promptly to incidents. Protect company data and ensure systems are secure from cyber threats. Monitor security systems and respond promptly to incidents. Monitor security systems and respond promptly to incidents. Protect company data and ensure systems are secure from cyber threats.',
+    description: 'Protect company data and ensure systems are secure from cyber threats. Monitor security systems. Protect company data and ensure systems are secure from cyber threats. Monitor security systems and respond promptly to incidents. Monitor security systems and respond promptly to incidents. Protect company data and ensure systems are secure from cyber threats.',
     location: 'Los Angeles, CA',
     type: 'Full Time'
   }
