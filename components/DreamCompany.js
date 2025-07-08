@@ -20,7 +20,7 @@ export default function DreamCompany() {
             Well no need to worry folks, because JobNow has got you covered with every job that
             you can possibly think of, so don't hesitate to search for your dream job.
           </p>
-          <button className="mt-2 border border-[#00D5AE] text-[#00D5AE] hover:bg-[#00D5AE] hover:text-white transition px-5 py-2 rounded-md text-sm font-medium">
+          <button className="mt-2 border border-[#00D5AE] text-[#00D5AE] hover:bg-[#00D5AE] hover:text-white transition px-5 py-2 rounded-md text-sm font-medium cursor-pointer">
             Learn More
           </button>
         </div>

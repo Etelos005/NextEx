@@ -41,9 +41,9 @@ export default function Feedback() {
   }
 
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-22 grid grid-cols-1 md:grid-cols-3 gap-0 items-center">
-        <div className="md:col-span-1 order-1 mt-12 md:order-2">
+    <section className="py-14 md:py-20 bg-gray-50">
+      <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-5 gap-0 items-center">
+        <div className="md:col-span-2 order-1 mt-8 md:mt-22 md:order-2">
           <div className="hidden md:block">
             <Swiper
               modules={[Navigation]}
@@ -59,7 +59,7 @@ export default function Feedback() {
                   <img
                     src={feedback.image}
                     alt={feedback.name}
-                    className="w-[400px] h-[350px] rounded-lg object-cover"
+                    className="w-[350px] h-[300px] md:w-[450px] md:h-[400px] rounded-lg object-cover"
                   />
                 </SwiperSlide>
               ))}
@@ -67,11 +67,11 @@ export default function Feedback() {
           </div>
         </div>
 
-        <div className="md:col-span-2 order-2 md:order-1 text-center md:text-left">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+        <div className="md:col-span-3 order-2 md:order-1 text-center md:text-left">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">
             People’s Feedback about JobNow!
           </h2>
-          <p className="text-gray-500 mb-12 max-w-xl mx-auto md:mx-0">
+          <p className="text-gray-500 mb-6 md:mb-12 max-w-xl mx-auto md:mx-0 text-sm md:text-base">
             Like democracy, everyone can give their own feedback. So here are some of the testimonials we’ve received from our users.
           </p>
 
@@ -81,7 +81,7 @@ export default function Feedback() {
               nextEl: '.next-btn',
               prevEl: '.prev-btn'
             }}
-            spaceBetween={30}
+            spaceBetween={20}
             slidesPerView={1}
             loop
             onSwiper={(swiper) => (textSwiperRef.current = swiper)}
@@ -89,29 +89,29 @@ export default function Feedback() {
           >
             {feedbacks.map((feedback, index) => (
               <SwiperSlide key={index}>
-                <blockquote className="text-lg text-gray-800 mb-8 max-w-xl mx-auto md:mx-0">
+                <blockquote className="text-base md:text-lg text-gray-800 mb-4 md:mb-8 max-w-xl mx-auto md:mx-0">
                   {feedback.message}
                 </blockquote>
 
-                <div className="block md:hidden my-6">
+                <div className="block md:hidden my-4">
                   <img
                     src={feedback.image}
                     alt={feedback.name}
-                    className="w-[300px] h-[260px] rounded-lg object-cover mx-auto"
+                    className="w-[260px] h-[220px] rounded-lg object-cover mx-auto"
                   />
                 </div>
 
-                <p className="font-semibold text-xl md:text-2xl mb-2">{feedback.name}</p>
-                <p className="text-gray-500 text-sm mb-6">{feedback.role}</p>
+                <p className="font-semibold text-lg md:text-2xl mb-1">{feedback.name}</p>
+                <p className="text-gray-500 text-sm mb-4 md:mb-6">{feedback.role}</p>
               </SwiperSlide>
             ))}
           </Swiper>
 
-          <div className="flex justify-center md:justify-start gap-6">
-            <button className="prev-btn w-10 h-10 flex items-center justify-center bg-gray-300 text-gray-600 rounded-full transition-colors duration-300 hover:bg-[#00D5AE] hover:text-white cursor-pointer">
+          <div className="flex justify-center md:justify-start gap-4 md:gap-6">
+            <button className="prev-btn w-9 h-9 md:w-10 md:h-10 flex items-center justify-center bg-gray-300 text-gray-600 rounded-full transition-colors duration-300 hover:bg-[#00D5AE] hover:text-white cursor-pointer">
               <FaArrowLeft />
             </button>
-            <button className="next-btn w-10 h-10 flex items-center justify-center bg-gray-300 text-gray-600 rounded-full transition-colors duration-300 hover:bg-[#00D5AE] hover:text-white cursor-pointer">
+            <button className="next-btn w-9 h-9 md:w-10 md:h-10 flex items-center justify-center bg-gray-300 text-gray-600 rounded-full transition-colors duration-300 hover:bg-[#00D5AE] hover:text-white cursor-pointer">
               <FaArrowRight />
             </button>
           </div>
