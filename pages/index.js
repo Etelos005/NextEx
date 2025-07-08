@@ -6,6 +6,7 @@ import DreamCompany from '@/components/DreamCompany'
 import Categories from '@/components/Categories'
 import AddedJobs from '@/components/AddedJobs'
 import Feedback from '@/components/Feedback'
+import Footer from "@/components/Footer"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Categories />
         <AddedJobs />
         <Feedback />
+        <Footer />
       </div>
     </>
   )

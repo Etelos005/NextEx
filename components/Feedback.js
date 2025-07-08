@@ -59,7 +59,7 @@ export default function Feedback() {
                   <img
                     src={feedback.image}
                     alt={feedback.name}
-                    className="w-[350px] h-[300px] md:w-[450px] md:h-[400px] rounded-lg object-cover"
+                    className="w-[350px] h-[300px] md:w-full md:h-[400px] rounded-lg object-cover"
                   />
                 </SwiperSlide>
               ))}
