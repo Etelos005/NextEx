@@ -5,6 +5,7 @@ import HowItWorks from '@/components/HowItWorks'
 import DreamCompany from '@/components/DreamCompany'
 import Categories from '@/components/Categories'
 import AddedJobs from '@/components/AddedJobs'
+import Feedback from '@/components/Feedback'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         <DreamCompany />
         <Categories />
         <AddedJobs />
+        <Feedback />
       </div>
     </>
   )

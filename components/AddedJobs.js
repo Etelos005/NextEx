@@ -8,7 +8,7 @@ const jobs = [
     logo: '/Images/ui-ux.png',
     title: 'UI/UX Designer',
     company: 'Dimension Studio',
-    description: 'Design and develop user-centered interfaces for web and mobile apps. Collaborate with teams, conduct user research, and ensure seamless design implementation for enhanced usability. Design and develop user-centered interfaces for web and mobile apps. Collaborate with teams, conduct user research, and ensure seamless design implementation.',
+    description: 'Design and develop user-centered interfaces for web and mobile apps. Collaborate with teams, conduct user research, and ensure seamless design implementation for enhanced usability. Design and develop user-centered interfaces for web and mobile apps. Collaborate with teams, conduct user research, and ensure seamless design implementation. Design and develop user-centered interfaces.',
     location: 'San Francisco, CA',
     type: 'Full Time'
   },
@@ -16,7 +16,7 @@ const jobs = [
     logo: '/Images/fullstack.png',
     title: 'Full Stack Developer',
     company: 'Alpander',
-    description: 'Work on both frontend and backend development using modern frameworks. Optimize application performance and ensure scalability across multiple platforms and environments. Work on both frontend and backend development using modern frameworks. Optimize application performance and ensure scalability across multiple platforms and environments.',
+    description: 'Work on both frontend and backend development using modern frameworks. Optimize application performance and ensure scalability across multiple platforms and environments. Work on both frontend and backend development using modern frameworks. Optimize application performance and ensure scalability across multiple platforms and environments.Work on both frontend and backend.',
     location: 'San Francisco, CA',
     type: 'Full Time'
   },
@@ -24,7 +24,7 @@ const jobs = [
     logo: '/Images/design.png',
     title: 'Product Designer',
     company: 'XReact Tech',
-    description: 'Create wireframes, prototypes, and UI designs for some of the products. Drive innovation through design thinking and maintain consistency across all digital touchpoints. Create wireframes, prototypes, and UI designs for SaaS products. Drive innovation through design thinking and maintain consistency across all digital touchpoints.',
+    description: 'Create wireframes, prototypes, and UI designs for some of the products. Drive innovation through design thinking and maintain consistency across all digital touchpoints. Create wireframes, prototypes, and UI designs for SaaS products. Drive innovation through design thinking and maintain consistency across all digital touchpoints. Create wireframes prototypes and UI.',
     location: 'San Francisco, CA',
     type: 'Full Time'
   },
@@ -32,7 +32,7 @@ const jobs = [
     logo: '/Images/data.png',
     title: 'Data Analyst',
     company: 'DataBridge Analytics',
-    description: 'Analyze data trends and deliver actionable insights to business teams. Develop dashboards and reports for executive decision-making support. Analyze data trends and deliver actionable insights to business teams. Develop dashboards and reports for executive decision-making support. Analyze data trends and deliver actionable insights to business teams.',
+    description: 'Analyze data trends and deliver actionable insights to business teams. Develop dashboards and reports for executive decision-making support. Analyze data trends and deliver actionable insights to business teams. Develop dashboards and reports for executive decision-making support. Analyze data trends and deliver actionable insights to business teams. Analyze data trends and insights.',
     location: 'New York, NY',
     type: 'Part Time'
   },
@@ -40,7 +40,7 @@ const jobs = [
     logo: '/Images/cyber.png',
     title: 'Cybersecurity Specialist',
     company: 'SecureNet',
-    description: 'Protect company data and ensure systems are secure from cyber threats. Monitor security systems. Protect company data and ensure systems are secure from cyber threats. Monitor security systems and respond promptly to incidents. Monitor security systems and respond promptly to incidents. Protect company data and ensure systems are secure from cyber threats.',
+    description: 'Protect company data and ensure systems are secure from cyber threats. Monitor security systems and respond promptly to incidents. Protect company data and ensure systems are secure from cyber threats. Monitor security systems and respond promptly to incidents. Monitor security systems and respond promptly to incidents. Protect company data and ensure systems are secure from cyber threats.',
     location: 'Los Angeles, CA',
     type: 'Full Time'
   }
@@ -67,30 +67,31 @@ export default function AddedJobs() {
           >
             {jobs.map((job, index) => (
               <SwiperSlide key={index} className="flex">
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-md text-left w-full p-5">
+                <div className="flex flex-col justify-between bg-white rounded-xl shadow-md text-left w-full p-6">
                   <img
                     src={job.logo}
                     alt={`${job.company} logo`}
-                    className="w-20 h-20 rounded-full bg-gray-200 p-3 mb-4 object-contain"
+                    className="w-20 h-20 rounded-full bg-gray-200 p-3 mb-6 object-contain"
                   />
                   <div className="flex flex-col flex-grow justify-between">
                     <div>
-                      <h3 className="text-lg font-semibold text-black mb-1">{job.title}</h3>
-                      <p className="text-sm text-gray-500 mb-8">{job.company}</p>
-                      <p className="text-sm text-gray-600 mb-6">{job.description}</p>
+                      <h3 className="text-lg font-semibold text-black mb-3">{job.title}</h3>
+                      <p className="text-sm text-gray-500 mb-9">{job.company}</p>
+                      <p className="text-sm text-gray-600 mb-8">{job.description}</p>
                     </div>
                     <div>
-                      <div className="flex gap-2 mb-5">
-                        <span className="flex items-center gap-2 bg-gray-200 px-3.5 py-2 md:px-5 md:py-2.5 rounded text-sm text-black">
+                      <div className="flex gap-3 mb-6">
+                        <span className="flex items-center gap-2 bg-gray-200 px-2.5 py-1 md:px-5 md:py-2.5 rounded text-sm text-black">
                           <FaMapMarkerAlt className="text-sm" /> {job.location}
                         </span>
-                        <span className="flex items-center gap-2 bg-gray-200 px-3.5 py-2 md:px-5 md:py-2.5 rounded text-sm text-black">
+                        <span className="flex items-center gap-2 bg-gray-200 px-2.5 py-1 md:px-5 md:py-2.5 rounded text-sm text-black">
                           <FaBriefcase className="text-sm" /> {job.type}
                         </span>
                       </div>
                       <button className="text-[#00D5AE] font-bold text-lg flex items-center gap-3 transition-all duration-300 group cursor-pointer">
-                        Apply Now
-                        <span className="transition-transform duration-300 group-hover:translate-x-1">{'>'}</span>
+                        <span className="flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300">
+                          Apply Now <span>{'>'}</span>
+                        </span>
                       </button>
                     </div>
                   </div>
