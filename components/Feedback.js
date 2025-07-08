@@ -35,11 +35,14 @@ export default function Feedback() {
     if (imageSwiperRef.current && swiper.realIndex !== imageSwiperRef.current.realIndex) {
       imageSwiperRef.current.slideToLoop(swiper.realIndex)
     }
+    if (textSwiperRef.current && swiper.realIndex !== textSwiperRef.current.realIndex) {
+      textSwiperRef.current.slideToLoop(swiper.realIndex)
+    }
   }
 
   return (
     <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-22 grid  grid-cols-1 md:grid-cols-3 gap-0 items-center">
+      <div className="container mx-auto px-22 grid grid-cols-1 md:grid-cols-3 gap-0 items-center">
         <div className="md:col-span-1 order-1 mt-12 md:order-2">
           <div className="hidden md:block">
             <Swiper
@@ -49,6 +52,7 @@ export default function Feedback() {
               slidesPerView={1}
               loop
               onSwiper={(swiper) => (imageSwiperRef.current = swiper)}
+              onSlideChange={(swiper) => syncSwipers(swiper)}
             >
               {feedbacks.map((feedback, index) => (
                 <SwiperSlide key={index}>
@@ -89,7 +93,7 @@ export default function Feedback() {
                   {feedback.message}
                 </blockquote>
 
-                <div className="block md:hidden my-6 ">
+                <div className="block md:hidden my-6">
                   <img
                     src={feedback.image}
                     alt={feedback.name}
@@ -103,7 +107,7 @@ export default function Feedback() {
             ))}
           </Swiper>
 
-          <div className="flex justify-center md:justify-start gap-6 ">
+          <div className="flex justify-center md:justify-start gap-6">
             <button className="prev-btn w-10 h-10 flex items-center justify-center bg-gray-300 text-gray-600 rounded-full transition-colors duration-300 hover:bg-[#00D5AE] hover:text-white cursor-pointer">
               <FaArrowLeft />
             </button>
