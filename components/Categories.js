@@ -14,7 +14,7 @@ const categories = [
 
 export default function Categories() {
   return (
-    <section className="py-20 bg-[#f0fdfa]">
+    <section id="about" className="py-20 bg-[#f0fdfa]">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Popular Job Categories</h2>
         <p className="text-gray-500 max-w-xl mx-auto mb-10">

@@ -3,7 +3,7 @@ import { BsShieldShaded } from 'react-icons/bs'
 
 export default function Banner() {
   return (
-    <section className="relative w-full overflow-hidden">
+    <section id="home" className="relative w-full overflow-hidden">
       <div className="hidden md:flex w-full min-h-[450px]">
         <div className="w-[50%] bg-white" />
         <div className="w-[50%] bg-[#00D5AE] rounded-bl-[100px]" />
@@ -11,7 +11,7 @@ export default function Banner() {
 
       <div className="block md:hidden absolute inset-0 bg-[#00D5AE] z-0" />
 
-      <div className="relative container mx-auto md:px-10 z-10 md:-mt-[450px]">
+      <div className="relative container mx-auto md:px-6 z-10 md:-mt-[450px]">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[450px]">
           
           <div className="bg-white flex items-start justify-center">

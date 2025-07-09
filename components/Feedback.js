@@ -41,7 +41,7 @@ export default function Feedback() {
   }
 
   return (
-    <section className="py-14 md:py-20 bg-gray-50">
+    <section id="contact" className="py-14 md:py-20 bg-gray-50">
       <div className="container mx-auto px-6 md:px-8 grid grid-cols-1 md:grid-cols-5 gap-0 items-center">
         <div className="md:col-span-2 order-1 mt-8 md:mt-22 md:order-2">
           <div className="hidden md:block">

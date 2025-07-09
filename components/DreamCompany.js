@@ -1,6 +1,6 @@
 export default function DreamCompany() {
   return (
-    <section className="py-12 md:py-20 px-4 bg-white">
+    <section id="facilities" className="py-12 md:py-20 px-4 bg-white">
       <div className="container mx-auto px-4 md:px-6 grid grid-cols-1 md:grid-cols-5 items-center gap-y-8 md:gap-x-12">
         
         <div className="md:col-span-2 flex justify-center md:justify-start">

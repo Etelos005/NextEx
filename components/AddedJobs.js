@@ -48,7 +48,7 @@ const jobs = [
 
 export default function AddedJobs() {
   return (
-    <section className="py-20 bg-gray-100">
+    <section id="location" className="py-20 bg-gray-100">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Recently Added Jobs</h2>
         <p className="text-gray-600 max-w-xl mx-auto mb-10">
