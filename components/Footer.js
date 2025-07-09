@@ -4,12 +4,12 @@ import { FaGoogle, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#00D5AE] mt-38 md:mt-42 scroll-smooth">
-      <div className="container mx-auto px-12 md:px-8 pb-16">
+    <footer className="bg-[#00D5AE]">
+      <div className="container mx-auto px-12 md:px-8  pb-16">
         <div className="flex justify-center -translate-y-1/2">
-          <div className="bg-[#00382A] text-white rounded-2xl w-full md:w-3/4 p-6 md:p-10 text-center shadow-lg">
-            <h2 className="text-3xl md:text-4xl font-extrabold mb-3">Register your CV now!</h2>
-            <p className="text-gray-300 mb-5 text-sm md:text-base leading-snug">
+          <div className="bg-[#00382A] text-white rounded-2xl w-full md:w-3/4 p-6 md:p-10 text-center shadow-lg ">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold mb-3 ">Register your CV now!</h2>
+            <p className="text-gray-300 mb-4 text-sm md:text-base leading-normal max-w-xl mx-auto">
               Send us your CV right now so that we can see where should be put you and to what job you should take and don't forget your cover letter as well!
             </p>
             <button className="border border-white px-5 py-2 rounded hover:bg-white hover:text-[#00382A] transition cursor-pointer">
