@@ -29,12 +29,14 @@ export default function Footer() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-15 sm:gap-x-15 md:gap-y-0 md:gap-x-20">
-            <div>
+            <div className="text-center">
               <h3 className="text-base md:text-lg font-bold mb-3">Company</h3>
-              <p className="text-sm text-gray-100 leading-snug">Address: 123 Fifth Avenue, New York - 10018, USA</p>
-              <p className="text-sm text-gray-100 leading-snug mt-1">Call us: (+100) 456 7890</p>
-              <p className="text-sm text-gray-100 leading-snug mt-1">Email: yourjob@example.com</p>
-              <p className="text-sm text-gray-100 leading-snug mt-1">Mon-Sat: 9:00 AM - 18:00 PM</p>
+              <div className="inline-block text-left relative left-14.5">
+                <p className="text-sm text-gray-100 leading-snug">Address: 123 Fifth Avenue, New York - 10018, USA</p>
+                <p className="text-sm text-gray-100 leading-snug mt-1">Call us: (+100) 456 7890</p>
+                <p className="text-sm text-gray-100 leading-snug mt-1">Email: yourjob@example.com</p>
+                <p className="text-sm text-gray-100 leading-snug mt-1">Mon-Sat: 9:00 AM - 18:00 PM</p>
+              </div>
             </div>
 
             <div className="text-center">
@@ -48,8 +50,8 @@ export default function Footer() {
                   { href: '#location', label: 'Location' },
                   { href: '#contact', label: 'Contact' },
                 ].map((page, index) => (
-                  <li key={index} className="flex gap-1">
-                    <span className="w-7 text-right text-sm">&gt;</span>
+                  <li key={index}>
+                    <span className="w-7 inline-block text-right text-sm">&gt;</span>
                     <a href={page.href} className="text-sm hover:text-black transition-colors cursor-pointer">
                       {page.label}
                     </a>
@@ -58,9 +60,10 @@ export default function Footer() {
               </ul>
             </div>
 
-            <div className="sm:col-span-2 md:col-span-1">
+            {/* Contact Us */}
+            <div className="text-center">
               <h3 className="text-base md:text-lg font-bold mb-3">Contact Us</h3>
-              <div className="flex gap-3">
+              <div className="flex justify-center gap-3">
                 <Link href="https://www.google.com" target="_blank" rel="noopener noreferrer">
                   <FaGoogle className="w-5 h-5 hover:text-black transition-colors cursor-pointer" />
                 </Link>

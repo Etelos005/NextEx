@@ -67,7 +67,7 @@ export default function AddedJobs() {
           >
             {jobs.map((job, index) => (
               <SwiperSlide key={index} className="flex">
-                <div className="flex flex-col justify-between bg-white rounded-xl shadow-md text-left w-full p-6">
+                <div className="flex flex-col justify-between bg-white rounded-xl text-left w-full p-3">
                   <img
                     src={job.logo}
                     alt={`${job.company} logo`}

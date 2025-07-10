@@ -13,6 +13,8 @@ export default function Home() {
     <>
       <Head>
         <title>JobNow</title>
+        <meta name="description" content="Find your dream job with JobNow!" />
+        <link rel="icon" href="/Images/favicon.png" />
       </Head>
       <div className="bg-white text-black">
         <NavBar />
