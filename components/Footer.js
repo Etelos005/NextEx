@@ -60,7 +60,6 @@ export default function Footer() {
               </ul>
             </div>
 
-            {/* Contact Us */}
             <div className="text-center">
               <h3 className="text-base md:text-lg font-bold mb-3">Contact Us</h3>
               <div className="flex justify-center gap-3">
