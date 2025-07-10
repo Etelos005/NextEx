@@ -31,7 +31,7 @@ export default function Footer() {
           <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 gap-y-6 gap-x-15 sm:gap-x-15 md:gap-y-0 md:gap-x-20">
             <div className="text-center">
               <h3 className="text-base md:text-lg font-bold mb-3">Company</h3>
-              <div className="inline-block text-left relative left-14.5">
+              <div className="inline-block text-left relative left-11.5  md:left-14.5">
                 <p className="text-sm text-gray-100 leading-snug">Address: 123 Fifth Avenue, New York - 10018, USA</p>
                 <p className="text-sm text-gray-100 leading-snug mt-1">Call us: (+100) 456 7890</p>
                 <p className="text-sm text-gray-100 leading-snug mt-1">Email: yourjob@example.com</p>
